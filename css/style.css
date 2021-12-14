@@ -1,0 +1,26 @@
+.jumbotron {
+  background-image: url(../img/background.jpg);
+  text-align: center;
+  margin-top: 50px;
+}
+#email {
+  width: 300px;
+}
+#resumenapp {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.card-img-top {
+  width: 100%;
+}
+#footer {
+  background-color: orange;
+  padding-top: 150px;
+  margin-top: 150px;
+  text-align: center;
+  padding-bottom: 150px;
+}
+body {
+  position: relative;
+}
