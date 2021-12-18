@@ -1,103 +1,413 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://use.fontawesome.com/f22f712e94.css">
-    <title>MiApp</title>
+    <meta charset="utf-8" />
+    <title>Mi App</title>
 
-    <!-- CSS Estilos -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
-    </head>
-    <body data-spy="scroll" data-target="#navbar" data-offset="150">
-        <nav class="navbar navbar-light bg-faded navbar-fixed-top" id="navbar">
-              <a class="navbar-brand" href="#">MiApp</a>
-              <ul class="nav navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#jumbotron">Inicio <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#acercade">Acerca de</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#descargar">Descargar app</a>
-                </li>
-              </ul>
-              <form class="form-inline pull-xs-right">
-                <input id="email" class="form-control" type="email" placeholder="Email">
-                <input class="form-control" type="password" placeholder="Password">
-                <button class="btn btn-primary" type="submit">Login</button>
-              </form>
-    </nav>    
-    <div class="jumbotron">
-          <h1 class="display-3" id="jumbotron">¡Consigue tu objetivo!</h1>
-          <p class="lead">Esta es la razón por la que deberías descargarte esta fantástica app!</p>
-          <hr class="m-y-2">
-          <p>¿Deseas conocer más? ¡Suscríbete a nuestra lista de correo!</p>
-         <form class="form-inline">
-              <div class="form-group">
-                <label class="sr-only" for="direccionEmail">Dirección de email</label>
-                <div class="input-group">
-                  <div class="input-group-addon">@</div>
-                  <input type="text" class="form-control" id="email" placeholder="Tu email">
-                  
-                </div>
-              </div>
-                <button type="submit" class="btn btn-primary">Suscríbete</button>
-        </form>
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  
+
+<!-- navigation -->
+<section class="fixed-top navigation">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" width="70px" height="60px"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- navbar -->
+      <div class="collapse navbar-collapse text-center" id="navbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#feature">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Descargar App</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Registro</a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-primary ml-lg-3 primary-shadow">Iniciar Sesión</a>
+      </div>
+    </nav>
+  </div>
+</section>
+<!-- /navigation -->
+
+<!-- hero area -->
+<section class="hero-section hero" data-background="" style="background-image: url(img/hero-area/banner-bg.png);">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center zindex-1">
+        <h1 class="mb-3">¡Consigue tu objetivo!<br>
+          Y visita nuevos lugares</h1>
+        <a href="#" class="btn btn-secondary btn-lg">Más Imformación</a>
+        <!-- banner image -->
+        <img class="img-fluid w-100 banner-image" src="img/hero-area/banner-img.png" alt="banner-img">
+      </div>
     </div>
-        <div class="container" id="resumenapp">
-            <div class="row">
-                <h1 id="acercade">Porque esta app es impresionante</h1>
-                <p class="lead">Resumen, otra vez, porque tu app es impresionante.</p>
+  </div>
+  <!-- background shapes -->
+  <div id="scene">
+    <img class="img-fluid hero-bg-1 up-down-animation" src="img/background-shape/feature-bg-2.png" alt="">
+    <img class="img-fluid hero-bg-2 left-right-animation" src="img/background-shape/seo-ball-1.png" alt="">
+    <img class="img-fluid hero-bg-3 left-right-animation" src="img/background-shape/seo-half-cycle.png" alt="">
+    <img class="img-fluid hero-bg-4 up-down-animation" src="img/background-shape/green-dot.png" alt="">
+    <img class="img-fluid hero-bg-5 left-right-animation" src="img/background-shape/blue-half-cycle.png" alt="">
+    <img class="img-fluid hero-bg-6 up-down-animation" src="img/background-shape/seo-ball-1.png" alt="">
+    <img class="img-fluid hero-bg-7 left-right-animation" src="img/background-shape/yellow-triangle.png" alt="">
+    <img class="img-fluid hero-bg-8 up-down-animation" src="img/background-shape/service-half-cycle.png" alt="">
+    <img class="img-fluid hero-bg-9 up-down-animation" src="img/background-shape/team-bg-triangle.png" alt="">
+  </div>
+</section>
+<!-- /hero-area -->
+
+
+
+<!-- marketing -->
+<section class="section-lg seo">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="seo-image">
+          <img class="img-fluid" src="img/marketing/marketing.png" alt="form-img">
+        </div>
+      </div>
+      <div class="col-md-5">
+        <h2 class="section-title">A Complete Range Of SEO Marketing Services!</h2>
+        <p>Far far away, behind the word mountains, far
+          from the countries Vokalia and Consonantia.<br>
+          There live the blind texts. Separated they
+          live in Bookmarksgrove right at the coast of
+          the Semantics, a large language ocean.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- background image -->
+  <img class="img-fluid seo-bg" src="img/backgrounds/seo-bg.png" alt="seo-bg">
+  <!-- background-shape -->
+  <img class="seo-bg-shape-1 left-right-animation" src="img/background-shape/seo-ball-1.png" alt="bg-shape">
+  <img class="seo-bg-shape-2 up-down-animation" src="img/background-shape/seo-half-cycle.png" alt="bg-shape">
+  <img class="seo-bg-shape-3 left-right-animation" src="img/background-shape/seo-ball-2.png" alt="bg-shape">
+</section>
+<!-- /marketing -->
+
+<!-- service -->
+<section class="section-lg service">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-md-5 order-2 order-md-1">
+        <h2 class="section-title">Powerful Layout From Top To Bottom</h2>
+        <p class="mb-4">Far far away, behind the word mountains,
+          far from the countries Vokalia and Consonantia,
+          there live the blind texts. Separated they
+          live in Bookmarksgrove right at the coast of the
+          Semantics, a large language ocean.</p>
+        <ul class="pl-0 service-list">
+          <li><i class="ti-layout-tab-window text-purple"></i>Responsive on any device</li>
+          <li><i class="ti-layout-placeholder text-purple"></i>Very easy to customize</li>
+          <li><i class="ti-support text-purple"></i>Effective support</li>
+        </ul>
+      </div>
+      <div class="col-md-7 order-1 order-md-2">
+        <img class="img-fluid layer-3" src="img/service/service.png" alt="service">
+      </div>
+    </div>
+  </div>
+  <!-- background image -->
+  <img class="img-fluid service-bg" src="img/backgrounds/service-bg.png" alt="service-bg">
+  <!-- background shapes -->
+  <img class="service-bg-shape-1 up-down-animation" src="img/background-shape/service-half-cycle.png" alt="background-shape">
+  <img class="service-bg-shape-2 left-right-animation" src="img/background-shape/feature-bg-2.png" alt="background-shape">
+</section>
+<!-- /service -->
+
+<!-- team -->
+<section class="section-lg team" id="team">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Our Team</h2>
+        <p class="mb-100">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu<br>
+          fugiat nulla pariatur. Excepteur sint occaecat </p>
+      </div>
+    </div>
+    <div class="col-10 mx-auto">
+      <div class="team-slider">
+        <!-- team-member -->
+        <div class="team-member">
+          <div class="d-flex mb-4">
+            <div class="mr-3">
+              <img class="rounded-circle img-fluid" src="img/team/team-1.jpg" alt="team-member">
             </div>
-        </div>
-        <div class="container">
-        <div class="card-deck-wrapper">
-              <div class="card-deck">
-                <div class="card">
-                  <img class="card-img-top" src="img/conmiapp.jpg" alt="Card image cap">
-                  <div class="card-block">
-                    <h4 class="card-title"><i class="fa fa-anchor" aria-hidden="true"></i>
-Card title</h4>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                  <img class="card-img-top" src="img/conmiapp.jpg" alt="Card image cap">
-                  <div class="card-block">
-                    <h4 class="card-title"><i class="fa fa-battery-full" aria-hidden="true"></i>
-Card title</h4>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                  <img class="card-img-top" src="img/conmiapp.jpg" alt="Card image cap">
-                  <div class="card-block">
-                    <h4 class="card-title"><i class="fa fa-bar-chart" aria-hidden="true"></i>
-Card title</h4>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
-        </div>
-</div>
-        <div id="footer">
-            <div class="row">
-                <h2 id="descargar">¡Descarga la app!</h2>
-                <p class="lead">Descarga la app y consigue tus objetivos</p>
-                <p><a href=""><img src="img/appstore.png"></a><a href=""><img src="img/androidapp.png"></a></p>
+            <div class="align-self-center">
+              <h4>Becroft</h4>
+              <h6 class="text-color">web designer</h6>
             </div>
-        
+          </div>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. S eparated they</p>
         </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-    
-  </body>
+        <!-- team-member -->
+        <div class="team-member">
+          <div class="d-flex mb-4">
+            <div class="mr-3">
+              <img class="rounded-circle img-fluid" src="img/team/team-2.jpg" alt="team-member">
+            </div>
+            <div class="align-self-center">
+              <h4>John Doe</h4>
+              <h6 class="text-color">web developer</h6>
+            </div>
+          </div>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. S eparated they</p>
+        </div>
+        <!-- team-member -->
+        <div class="team-member">
+          <div class="d-flex mb-4">
+            <div class="mr-3">
+              <img class="rounded-circle img-fluid" src="img/team/team-3.jpg" alt="team-member">
+            </div>
+            <div class="align-self-center">
+              <h4>Erik Ligas</h4>
+              <h6 class="text-color">Programmer</h6>
+            </div>
+          </div>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+            the blind texts. S eparated they</p>
+        </div>
+        <!-- team-member -->
+        <div class="team-member">
+          <div class="d-flex mb-4">
+            <div class="mr-3">
+              <img class="rounded-circle img-fluid" src="img/team/team-1.jpg" alt="team-member">
+            </div>
+            <div class="align-self-center">
+              <h4>Erik Ligas</h4>
+              <h6 class="text-color">Programmer</h6>
+            </div>
+          </div>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+            the blind texts. S eparated they</p>
+        </div>
+        <!-- team-member -->
+        <div class="team-member">
+          <div class="d-flex mb-4">
+            <div class="mr-3">
+              <img class="rounded-circle img-fluid" src="img/team/team-2.jpg" alt="team-member">
+            </div>
+            <div class="align-self-center">
+              <h4>John Doe</h4>
+              <h6 class="text-color">web developer</h6>
+            </div>
+          </div>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. S eparated they</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- backgound image -->
+  <img src="img/backgrounds/team-bg.png" alt="team-bg" class="img-fluid team-bg">
+  <!-- background shapes -->
+  <img class="team-bg-shape-1 up-down-animation" src="img/background-shape/seo-ball-1.png" alt="background-shape">
+  <img class="team-bg-shape-2 left-right-animation" src="img/background-shape/seo-ball-1.png" alt="background-shape">
+  <img class="team-bg-shape-3 left-right-animation" src="img/background-shape/team-bg-triangle.png" alt="background-shape">
+  <img class="team-bg-shape-4 up-down-animation img-fluid" src="img/background-shape/team-bg-dots.png" alt="background-shape">
+</section>
+<!-- /team -->
+
+<!-- pricing -->
+<section class="section-lg pb-0 pricing" id="pricing">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Our Pricing</h2>
+        <p class="mb-50">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu <br>
+          fugiat nulla pariatur. Excepteur sint occaecat </p>
+      </div>
+      <div class="col-lg-10 mx-auto">
+        <div class="row justify-content-center">
+          <!-- pricing table -->
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+            <div class="rounded text-center pricing-table table-1">
+              <h3>Free</h3>
+              <h1><span>$</span>00</h1>
+              <p>Far far away, behind the
+                wordmountains, far from the
+                countries Vokalia and
+              </p>
+              <a href="#" class="btn pricing-btn px-2">Get Started</a>
+            </div>
+          </div>
+          <!-- pricing table -->
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+            <div class="rounded text-center pricing-table table-2">
+              <h3>Standard</h3>
+              <h1><span>$</span>75</h1>
+              <p>Far far away, behind the
+                wordmountains, far from the
+                countries Vokalia and
+              </p>
+              <a href="#" class="btn pricing-btn px-2">Buy Now</a>
+            </div>
+          </div>
+          <!-- pricing table -->
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+            <div class="rounded text-center pricing-table table-3">
+              <h3>Premium</h3>
+              <h1><span>$</span>99</h1>
+              <p>Far far away, behind the
+                wordmountains, far from the
+                countries Vokalia and
+              </p>
+              <a href="#" class="btn pricing-btn px-2">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- background shapes -->
+  <img class="pricing-bg-shape-1 up-down-animation" src="img/background-shape/seo-ball-1.png" alt="background-shape">
+  <img class="pricing-bg-shape-2 up-down-animation" src="img/background-shape/seo-half-cycle.png" alt="background-shape">
+  <img class="pricing-bg-shape-3 left-right-animation" src="img/background-shape/team-bg-triangle.png" alt="background-shape">
+</section>
+<!-- /pricing -->
+
+<br>
+
+<!-- newsletter -->
+<section class="newsletter">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Subscribe to our newsletter</h2>
+        <p class="mb-5">Receive updates, news and deals</p>
+      </div>
+      <div class="col-lg-8 col-sm-10 col-12 mx-auto">
+        <form action="#">
+          <div class="input-wrapper position-relative">
+            <input type="email" class="newsletter-form" id="newsletter" placeholder="Enter your email">
+            <button type="submit" value="send" class="btn newsletter-btn">subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+ <!-- product -->
+<section class="section product" style="background-image: url(img/backgrounds/about-bg.png);">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Our Product</h2>
+        <p class="mb-100">Far far away, behind the word mountains, far from the <br> countries Vokalia and Consonantia.</p>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-50">
+        <a href="#"><img src="img/product/product-1.jpg" alt="product-img" class="rounded w-100 img-fluid"></a>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-50">
+        <a href="#"><img src="img/product/product-2.jpg" alt="product-img" class="rounded w-100 img-fluid"></a>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-50">
+        <a href="#"><img src="img/product/product-3.jpg" alt="product-img" class="rounded w-100 img-fluid"></a>
+      </div>
+      <div class="col-12 text-center">
+        <a href="#" class="btn btn-primary">Explore More Product</a>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <!-- background shapes -->
+  <img class="newsletter-bg-shape left-right-animation" src="img/background-shape/seo-ball-2.png" alt="background-shape">
+</section>
+<!-- /newsletter -->
+
+
+
+<!-- footer -->
+<footer class="footer-section footer" style="background-image: url(img/backgrounds/footer-bg.png);">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
+        <!-- logo -->
+        <a href="index.html">
+          <img class="img-fluid" src="img/logo.png" alt="logo">
+        </a>
+      </div>
+      <!-- footer menu -->
+      <nav class="col-lg-8 align-self-center mb-5">
+        <ul class="list-inline text-lg-right text-center footer-menu">
+          <li class="list-inline-item active"><a href="index.html">Inicio</a></li>
+          <li class="list-inline-item"><a class="page-scroll" href="#feature">Acerca de</a></li>
+          <li class="list-inline-item"><a href="about.html">Descargar App</a></li>
+          <li class="list-inline-item"><a class="page-scroll" href="#team">Registro</a></li>
+          <li class="list-inline-item"><a class="page-scroll" href="#pricing">Iniciar Sesión</a></li>
+        </ul>
+      </nav>
+      <!-- footer social icon -->
+      <nav class="col-12">
+        <ul class="list-inline text-lg-right text-center social-icon">
+          <li class="list-inline-item">
+            <a class="facebook" href="#"><i class="ti-facebook"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a class="twitter" href="#"><i class="ti-twitter-alt"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a class="linkedin" href="#"><i class="ti-linkedin"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a class="black" href="#"><i class="ti-github"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
 </html>
